@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container" style="text-align: center">
+        <h1 class="jb-red">안녕하세요.^^ 이곳은 글자수를 세주는 곳입니다.</h1>
+
+        <a href="{%url 'about'%}" style="color: orange;" >ABOUT</a>
+
+        <form action="{%url 'result'%}">
+            <textarea style="background-color:rgb(231, 243, 124); border-color:rgb(255,204,255); 
+            border-style:dashed; outline-color: yellow;" cols="50" rows="30" name="fulltext"></textarea>
+            <br>
+            <input type="submit" value="Count!" style="color: green">
+        </form>
+    </div>
+</body>
+</html>
+
+

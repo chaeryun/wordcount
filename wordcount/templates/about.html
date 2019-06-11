@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <div class="container" style="text-align: center">
+        <h1 style="color: blue;">about</h1>
+
+        <p style="color: purple;">안녕하세요. 이곳은 글자를 세 주는 페이지입니다. 이곳에서 글자를 세세요.</p>
+
+        <a href="{%url 'home'%}" style="color: red;">Home으로 돌아가기</a>
+    </div>
+</body>
+</html>
